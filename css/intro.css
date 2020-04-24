@@ -1,0 +1,42 @@
+
+
+.eighonetAerta {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    background: url("../pictures/812H.png") no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+
+.progressBar {
+    margin: 10px;
+    position: relative;
+    left: 10%;
+    top: 85%;
+    width: 80%;
+    height: 0.3%;
+}
+/*
+.ldBar path.mainline {
+    stroke-width: 2;
+    stroke: #09f;
+    stroke-linecap: round;
+}
+.ldBar path.baseline {
+    stroke-width: 14;
+    stroke: #f1f2f3;
+    stroke-linecap: round;
+    filter:url(#custom-shadow);
+}
+ */
+
+.bar {
+    width: 0;
+    height: 100%;
+    transition: height .3s;
+    background:#000;
+}

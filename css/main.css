@@ -1,0 +1,400 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cont {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.9fr 1fr;
+    grid-template-rows: 1fr !important;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: 8fr 0.4fr;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 1.3fr 0.93fr 6fr 1.35fr;
+}
+
+.flow {
+    font-size: 25px;
+    display: inline-grid;
+    grid-template-columns: 0.1fr 1fr;
+    font-family: Bachnschrift;
+    font-variation-settings: "wght" 350;
+    justify-items: lefts;
+    margin-bottom: 20px;
+}
+
+.titleFlow {
+    margin-left: 25px;
+
+}
+
+.contFlow {
+    margin-left: 15px;
+}
+
+.titleCond {
+    margin-top: 7%;
+    display: grid;
+    align-self: center;
+    font-size: 44px;
+    font-family: Bachnschrift;
+    font-variation-settings: "wght" 350;
+}
+
+
+.res {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    font-size: 25px;
+    font-family: Bachnschrift;
+    font-variation-settings: "wght" 300;
+}
+
+
+.contRes {
+    margin-left: 15px;
+}
+
+.cornerButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.backButton {
+    font-size: 30px;
+    font-family: Bachnschrift;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    cursor: default;
+    z-index: 500511;
+}
+
+.applyButton {
+    font-size: 30px;
+    font-family: Bachnschrift;
+    position: absolute;
+    bottom: 20px;
+    cursor: default;
+    z-index: 500511;
+}
+
+.table {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 93%;
+}
+
+.titleRow {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr  1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Bachnschrift;
+    font-variation-settings: "wdth" 95, "wght" 300;
+
+}
+
+.titleRow:nth-child(2n+1) {
+    background: #F7F7F7; /* Цвет фона */
+}
+
+.cont {
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+
+
+/* ==================================== GRAPH SECTION =================================== */
+
+
+#graph {
+    display: grid;
+}
+
+.vertex {
+    border-radius: 50%;
+    background-color: white;
+    z-index: -100;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    display: grid;
+    font-size: 65%;
+    align-items: center;
+    justify-items: center;
+}
+
+.vertex:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+
+
+
+.ldBar path.mainline {
+    stroke-width: 13px;
+
+    stroke: black;
+    stroke-linecap: butt;
+}
+
+#index21 path.mainline {
+    stroke-width: 0px;
+
+    stroke: black;
+    stroke-linecap: butt;
+}
+
+#index22 path.mainline {
+    stroke-width: 0px;
+
+    stroke: black;
+    stroke-linecap: butt;
+}
+
+.ldBar path.baseline {
+    stroke-width: 12px;
+    stroke: lightgray;
+    stroke-linecap: round;
+}
+
+.ldBar-label {
+display: none;
+}
+/*
+*/
+.lbBar {
+    position: absolute;
+    height: 60px !important;
+}
+.inner {
+    font-family: Bachnschrift;
+    position: absolute;
+
+}
+
+
+
+path {
+    stroke-width: 1;
+   -webkit-text-stroke-color: "#ffa000";
+    /* ... */
+}
+
+#ac_layer_27 {
+    marker-end: url(#triangle);
+}
+
+
+graph > path {
+    stroke-opacity: 0.5%;
+}
+
+/* Blocked only as the result of induced contradictory style. The icon with reference remained */
+
+.anychart-credits-text {
+    display: none !important;
+}
+
+.field {
+    font-family: Bachnschrift;
+    font-variation-settings: "wght" 250;
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    background-color: #000;
+    z-index: 500501;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0.85);
+
+}
+
+.addButton {
+    padding: 2.3px;
+    padding-left: 8px;
+    transition: 0.4s;
+}
+
+.addButton:hover {
+    padding: 2.3px;
+    background-color: rgba(215, 255, 255, 0.85);
+    transition: 0.4s;
+}
+.addButton:active {
+    transform: scale(0.95);
+
+    padding: 2.3px;
+    background-color: rgba(165, 255, 255, 0.85);
+    transition: 0.2s;
+}
+
+.removeButton {
+    padding: 2.3px;
+    padding-left: 8px;
+    transition: 0.4s;
+}
+.removeButton:hover {
+    padding: 2.3px;
+    background-color: rgba(215, 255, 255, 0.85);
+    transition: 0.4s;
+}
+.removeButton:active {
+    transform: scale(0.95);
+    padding: 2.3px;
+    background-color: rgba(165, 255, 255, 0.85);
+    transition: 0.2s;
+}
+
+.anychart-ui-support:hover {
+    display: none;
+}
+
+
+/* ==================================== MODALS =================================== */
+
+.modalAdd{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.modalRemove {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.modalAdd > .modal {
+    max-height: 80px;
+    position: absolute;
+    width: 37.5%;
+    height: 10%;
+    z-index: 1500513;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 15px;
+}
+
+
+.modalRemove > .modal {
+    max-height: 80px;
+    position: absolute;
+    width: 37.5%;
+    height: 10%;
+    z-index: 1500513;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+}
+
+
+.modalAdd > .modal >.modalTitle {
+    font-family: Bachnschrift, serif;
+    font-variation-settings: "wght" 250;
+    font-size: 30px;
+    width: 100%;
+}
+
+.modalRemove > .modal >.modalTitle {
+    font-family: Bachnschrift, serif;
+    font-variation-settings: "wght" 250;
+    font-size: 30px;
+    width: 100%;
+}
+
+.modalAdd > .modalOverlay {
+    display:none;
+    display:none;
+    z-index: 1500512;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalRemove > .modalOverlay {
+    display:none;
+    display:none;
+    z-index: 1500512;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.modalInput {
+    align-items: center;
+    font-size: 14px;
+    font-family: Bachnschrift;
+    font-variation-settings: "wdth" 95, "wght" 300;
+    display: grid;
+    font-family: Bachnschrift, serif;
+    font-variation-settings: "wght" 250;
+    grid-template-columns: 1fr 0.1fr 5.2fr auto;
+    white-space: nowrap;
+}
+
+.modalRemove > .modal >.modalInput {
+    grid-template-columns: 1fr 0.3fr 12.2fr auto;
+}
+
+.enterButton {
+    right: 5%;
+    top: 22%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url("../pictures/enter.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    z-index: 500600;
+}
+
+input {
+     border: none;
+     overflow: hidden;
+     width: 30%;
+ }
+
+input:focus {
+   border: none;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,23 @@
+.mainContainer {
+    display: grid;
+    top: 15%;
+    height: 70%;
+    text-align: center;
+}
+
+.button {
+    cursor: default;
+    font-size: 2.1em;
+    text-align: center;
+    font-family: "Bachnschrift";
+
+    font-variation-settings: "wdth" 75, "wght" 300;
+}
+
+.title {
+
+    font-variation-settings: "wdth" 275, "wght" 400;
+    background-color: white;
+    font-size: 2.8em;
+}
+

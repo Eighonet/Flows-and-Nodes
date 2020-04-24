@@ -1,0 +1,43 @@
+html {
+    height: 100%;
+}
+
+body {
+    cursor: default;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.mainContainer {
+    position: relative;
+    display: grid;
+    justify-items: left;
+
+    top: 0;
+    left: 0;
+    width: 80%;
+}
+.title {
+    font-size: 50px;
+    font-family: Bachnschrift;
+    font-variation-settings: "wght" 350;
+
+}
+
+.description {
+    font-size: 30px;
+    font-family: Bachnschrift;
+    font-variation-settings: "wdth" 75, "wght" 300;
+    font-color: grey;
+}
+
+.backButton {
+    font-size: 30px;
+    font-family: Bachnschrift;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    cursor: default;
+}

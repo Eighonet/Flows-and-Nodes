@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flowgame</title>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../external_packages/dist/loading-bar.css"/>
+    <script type="text/javascript" src="../external_packages/dist/loading-bar.js"></script>
+
+    <script src="js/general-handler.js"></script>
+    <script src="js/main-handler.js"></script>
+
+
+
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-graph.min.js"></script>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+</head>
+<body>
+
+<div class = "cont">
+<div class = "left">
+    <div class = "field">
+        <div class = "addButton">ADD</div>
+        <div class = "removeButton"> REMOVE</div>
+    </div>
+   <div id="graph">
+       <div id = "index0" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">1</div>
+       </div>
+
+       <div id = "index1" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"> <div class = "inner">2</div>
+       </div>
+       <div id = "index2" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">3</div>
+
+       </div>
+       <div id = "index3" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">4</div>
+       </div>
+       <div id = "index4" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">5</div>
+       </div>
+       <div id = "index5" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">6</div>
+       </div>
+       <div id = "index6" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">7</div>
+       </div>
+       <div id = "index7" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">8</div>
+       </div>
+       <div id = "index8" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">9</div>
+       </div>
+       <div id = "index9" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">10</div>
+       </div>
+       <div id = "index10" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">11</div>
+       </div>
+       <div id = "index11" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">12</div>
+       </div>
+       <div id = "index12" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">13</div>
+       </div>
+       <div id = "index13" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">14</div>
+       </div>
+       <div id = "index14" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">15</div>
+       </div>
+       <div id = "index15" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">16</div>
+       </div>
+       <div id = "index16" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">17</div>
+       </div>
+       <div id = "index17" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">18</div>
+       </div>
+       <div id = "index18" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">19</div>
+       </div>
+       <div id = "index19" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">20</div>
+       </div>
+       <div id = "index20" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">21</div>
+       </div>
+       <div id = "index21" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">Or</div>
+       </div>
+       <div id = "index22" class = "ldBar label-center vertex"
+            data-value="60"
+            data-preset="circle"><div class = "inner">Te</div>
+       </div>
+      </div>
+    <div class = "flow">
+        <div class = "titleFlow">Flow:</div>
+        <div class = "contFlow">430</div>
+    </div>
+</div>
+
+<div class = "right">
+    <div class = "titleCond">CONDITIONS</div>
+    <div class = "res">
+        <div class = "titleRes">Resources:</div>
+        <div class = "contRes">10000</div>
+    </div>
+    <div class = "table">
+        <div class = "titleRow">
+        <div class = "firCol">№</div>
+        <div class = "secCol">$</div>
+        <div class = "thCol">default</div>
+        <div class = "fouCol">current</div>
+        <div class = "fifCol">flow</div>
+        </div>
+    </div>
+    <div class = "cornerButtons">
+    <div class = "backButton hvr-bob">TO MENU</div>
+        <div class = "applyButton hvr-bob">APPLY</div>
+    </div>
+    </div>
+</div>
+
+<div class ="modalAdd">
+    <form id = "m1" class="modal">
+        <div class="modalTitle">ADD</div>
+        <div class="modalInput">
+            <div class="modalText">Expenditure</div>
+            <div class ="modalDivider"></div>
+            <input id = "i1" type="number" placeholder="type here">
+        </div>
+        <div id = "e1" class ="enterButton"></div>
+    </form>
+    <div class="modalOverlay"></div>
+</div>
+
+<div class ="modalRemove">
+    <form id = "m2" class="modal">
+        <div class="modalTitle">REMOVE</div>
+        <div class="modalInput">
+            <div class="modalText">Refund </div>
+            <div class ="modalDivider"></div>
+            <input id = "i2" type="number" placeholder="type here">
+        </div>
+        <div id = "e2" class ="enterButton"></div>
+    </form>
+    <div class="modalOverlay"></div>
+</div>
+
+<script src="js/bars.js"></script>
+
+</body>
+</html>
